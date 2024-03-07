@@ -14,11 +14,11 @@ HigherOrder(Callback);
 
 // this greet function returns another function from its body
 const greet = function (name) {
-    console.log(name)
+  // console.log(name)
   return function (m) {
-  console.log(m)
+    console.log(`Hi ${name}, ${m}`);
   };
 };
 
-const greet_message = greet('ABC')
-greet_message('Welcome to Js')
+const greet_message = greet("ABC");
+greet_message("Welcome to Js");
