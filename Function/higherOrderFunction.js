@@ -12,6 +12,7 @@ function HigherOrder(fn) {
 
 HigherOrder(Callback);
 
+// this greet function returns another function from its body
 const greet = function (name) {
     console.log(name)
   return function (m) {
