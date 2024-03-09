@@ -10,7 +10,7 @@ const sumWithInitial = array.reduce(
 
 console.log(sumWithInitial);
 
-// Example 2, Here initial value is 10 which is first index of numbers array
+// Example 2, Here initial value is numbers[0] index which is first index of numbers array. so previous value will be 10
 
 const numbers = [10, 20, 30, 40, 50];
 
