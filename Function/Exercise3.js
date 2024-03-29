@@ -19,11 +19,33 @@ const newData = [
   },
 ];
 
+newData.map(item=>{
+  console.log(item);
+})
+
+
 const transformedData = newData.map((item) => ({
   fullName: item.name,
   Age: item.age.value,
   Address: item.address.value,
-  gender: item.gender,
 }));
-console.log(transformedData);
+// console.log(transformedData);
 
+const columns = [
+  {
+    header: "Name",
+    accessor: "name",
+  },
+  {
+    header: "Age",
+    accessor: "age",
+  },
+  {
+    header: "Address",
+    accessor: "address",
+  },
+];
+
+columns.forEach(column=>{
+  console.log(column);
+})
