@@ -1,16 +1,16 @@
 const mainData = [
     {
-      name: { firstName: "Parent", lastName: "One", value: "Orangetoolz" },
+      name: { firstName: "Parent1", lastName: "One", value: "Orangetoolz" },
       age: { value: 25 },
       address: { value: "Uttara" },
       childs: [
         {
-          name: { firstName: "Child", lastName: "One" },
+          name: { firstName: "Child1", lastName: "One" },
           age: { value: 25 },
           address: { value: "Uttara" },
         },
         {
-          name: { firstName: "Child", lastName: "Two" },
+          name: { firstName: "Child2", lastName: "Two" },
           age: { value: 25 },
           address: { value: "Uttara" },
         },
@@ -18,17 +18,17 @@ const mainData = [
       locationId: "testID1",
     },
     {
-      name: { firstName: "Parent", lastName: "Two", value: "Orangetoolz" },
+      name: { firstName: "Parent2", lastName: "Two", value: "Orangetoolz" },
       age: { value: 25 },
       address: { value: "Uttara" },
       childs: [
         {
-          name: { firstName: "Child", lastName: "One" },
+          name: { firstName: "Child3", lastName: "One" },
           age: { value: 25 },
           address: { value: "Uttara" },
         },
         {
-          name: { firstName: "Child", lastName: "Two" },
+          name: { firstName: "Child4", lastName: "Two" },
           age: { value: 25 },
           address: { value: "Uttara" },
         },
@@ -69,7 +69,7 @@ const mainData = [
             // console.log(header, accessor)
             // console.log(modifiedParent[header])
             if(accessor === "name"){
-                modifiedParent[header] = `${data.name.firstName}`
+                modifiedParent[header] = `${data.name}`
                 // console.log(modifiedParent)
             }
             else if(accessor === "age"){
@@ -85,8 +85,8 @@ const mainData = [
                   address: child.address.value,
                   age: child.age.value,
               }));
-              //   console.log(modifiedParent[header])
-                // return modifiedParent[header]
+                // console.log(modifiedParent[header])
+                // console.log(modifiedParent[header]) 
             }
             else if(accessor === "locationId"){
                 modifiedParent[header] = `${data.locationId}`
@@ -106,42 +106,45 @@ const mainData = [
   // console.log(modifiedData);
   let modifiedOutput = modifiedData(mainData, columns)
   console.log(modifiedOutput)
-const output = [
-  {
-    name: { firstName: "Parent", lastName: "One", value: "Orangetoolz" },
-    age: 25,
-    address: "Uttara",
-    subrows: [
-      {
-        name: { firstName: "Child", lastName: "One" },
-        age: 25,
-        address: "Uttara",
-      },
-      {
-        name: { firstName: "Child", lastName: "Two" },
-        age: 25,
-        address: "Uttara",
-      },
-    ],
-    locationId: "testID1",
-  },
-  {
-    name: { firstName: "Parent", lastName: "Two", value: "Orangetoolz" },
-    age: 25,
-    address: "Uttara",
-    subrows: [
-      {
-        name: { firstName: "Child", lastName: "One" },
-        age: 25,
-        address: "Uttara",
-      },
-      {
-        name: { firstName: "Child", lastName: "Two" },
-        age: 25,
-        address: "Uttara",
-      },
-    ],
-    locationId: "testID2",
-  },
-];
+
+
+
+// const output = [
+//   {
+//     name: { firstName: "Parent", lastName: "One", value: "Orangetoolz" },
+//     age: 25,
+//     address: "Uttara",
+//     subrows: [
+//       {
+//         name: { firstName: "Child", lastName: "One" },
+//         age: 25,
+//         address: "Uttara",
+//       },
+//       {
+//         name: { firstName: "Child", lastName: "Two" },
+//         age: 25,
+//         address: "Uttara",
+//       },
+//     ],
+//     locationId: "testID1",
+//   },
+//   {
+//     name: { firstName: "Parent", lastName: "Two", value: "Orangetoolz" },
+//     age: 25,
+//     address: "Uttara",
+//     subrows: [
+//       {
+//         name: { firstName: "Child", lastName: "One" },
+//         age: 25,
+//         address: "Uttara",
+//       },
+//       {
+//         name: { firstName: "Child", lastName: "Two" },
+//         age: 25,
+//         address: "Uttara",
+//       },
+//     ],
+//     locationId: "testID2",
+//   },
+// ];
 
