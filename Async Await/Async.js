@@ -6,7 +6,7 @@ function resolveAfterTwoSeconds(){
     })
 }
 
-// async function always returns a promise if we not use Promise Keyword
+// async function always returns a promise though we did not use Promise Keyword
 async function asyncCall (){
     console.log("calling")
     const result = await resolveAfterTwoSeconds()

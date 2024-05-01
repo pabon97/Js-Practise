@@ -32,7 +32,7 @@ function Progress() {
 }
 
 function getCertificate() {
-//   console.log("Preparing your certificate");
+  console.log("Preparing your certificate");
   const promise = new Promise(function (resolve, reject) {
     setTimeout(function () {
       resolve("Congrats! you got the certificate");
