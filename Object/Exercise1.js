@@ -27,7 +27,7 @@ const Project = {
 function getObjectLength(project) {
   let objectLength = Object.entries(project);
   // console.log(objectLength)
-  return objectLength.length;
+  return objectLength;
 }
 
 console.log(getObjectLength(Project));
